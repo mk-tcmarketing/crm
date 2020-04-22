@@ -1,0 +1,38 @@
+easy_admin:
+    site_name: 'TC Marketing CRM'
+    design:
+        menu:
+            - { entity: 'Client', icon: 'th-list', label: 'Client', default: true }
+            - { entity: 'Appel', icon: 'th-list', label: 'Appel', default: true }
+            - { entity: 'Societe', icon: 'th-list', label: 'Societe', default: true }
+            - { entity: 'RendezVous', icon: 'th-list', label: 'Rendez Vous', default: true }
+            - { icon: 'th-list', label: "Opportunités", url: '#' }
+            - { icon: 'th-list', label: "Agenda", url: '/agenda' }
+            - { entity: 'Devis', icon: 'th-list', label: 'Devis', default: true }
+            - { entity: 'User', icon: 'th-list', label: 'User', default: true }
+            - { label: 'Gestion de projet', url: 'http://www.trello.com/', target: '_blank' }
+
+    user:
+        display_name: true
+        display_avatar: false
+    entities:
+        Client:
+            class: App\Entity\Client
+        Appel:
+            class: App\Entity\Appel
+            form:
+                fields:
+                    - repense
+                    - client
+                    - rendez_vous
+        Societe:
+            class: App\Entity\Societe
+        RendezVous :
+            class : App\Entity\RendezVous
+            label: 'Rendez Vous'
+        ChiffreAffaire:
+            class: App\Entity\ChiffreAffaire
+        Devis:
+            class: App\Entity\Devis
+        User:
+            class: App\Entity\User

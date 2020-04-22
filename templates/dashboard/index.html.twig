@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tableau de bord | CRM{% endblock %}
+
+{% block body %}
+
+<div class="dashboard-container">
+	<div class="dashboard-elements">
+		<div class="dashboard-element">
+			<a href="/gestionaire"><img src="{{ asset('build/logotcmarketing.jpg') }}" /></a>
+		</div>
+		<div class="dashboard-element">
+			<a href="#"><img src="{{ asset('build/logotcl.jpg') }}" /></a>
+		</div>
+		<div class="dashboard-element">
+			<a href="#"><img src="{{ asset('build/logotcevent.jpg') }}" /></a>
+		</div>
+	</div>
+</div>
+{% endblock %}
